@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrot Catching</title>
+    <script src="main.js" defer></script>
+    <!-- <script src="test.js" defer></script> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0bcb80e978.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-</body>
+    <div class="container">
+        <div class="audio">
+            <audio class="bg" src="sound/bg.mp3"></audio>
+            <audio class="bug-pull" src="sound/bug_pull.mp3"></audio>
+            <audio class="carrot-pull" src="sound/carrot_pull.mp3"></audio>
+            <audio src="sound/game_win.mp3" class="game-win"></audio>
+        </div>
+        <div class="background">
+            <button class="playBtn active"><i class="fa-solid fa-play"></i></button>
+                <button class="pauseBtn"><i class="fa-solid fa-stop"></i></button>
+            <div class="information">
+                <div class="timer">2:00</div>
+                <div class="score"></div>
+            </div>
+            <ul class="contents">
+                
+                <li class="carrot"><img src="img/carrot.png" alt=""></li>
+                <li class="carrot"><img src="img/carrot.png" alt=""></li>
+                <li class="carrot"><img src="img/carrot.png" alt=""></li>
+                <li class="carrot"><img src="img/carrot.png" alt=""></li>
+                <li class="carrot"><img src="img/carrot.png" alt=""></li>
+                <li class="bug"><img src="img/bug.png" alt=""></li>
+                <li class="bug"><img src="img/bug.png" alt=""></li>
+                <li class="bug"><img src="img/bug.png" alt=""></li>
+                <li class="bug"><img src="img/bug.png" alt=""></li>
+                <li class="bug"><img src="img/bug.png" alt=""></li>
+            </ul>
+            <div class="reply">
+                <button class="reply__btn">
+                    <i class="fa-solid fa-reply"></i>
+                </button>
+                <div class="reply__description">
+                    <span style="color: var(--color-white)">Replay</span>
+                    <spna style="color: var(--color-red)">?</spna>
+                </div>
+            </div>
+        </div>
+    </body>
+    </div>
 </html>
